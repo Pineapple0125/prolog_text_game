@@ -1,0 +1,747 @@
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.7)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- start.
+
+Welcome to the Element Battle!!!!!
+Enter commands using standard Prolog syntax.
+Available commands are:
+start.             -- to start the game.
+n.  s.  e.  w.     -- to go in that direction.
+fight(Enemy).      -- to fight the enemy
+take(Object).      -- to pick up an object.
+drop(Object).      -- to put down an object.
+look.              -- to look around you again.
+check(Object).     -- to view details about an item
+open(Object).      -- to open the treasure box
+display_package.   -- to check the contents of your backpack
+interact(Sb).      -- to communicate with them
+instructions.      -- to see this message again.
+halt.              -- to end the game and quit.
+
+Here is the born place. There is a door to the south.No items in born_room.
+
+
+true.
+
+?- s.
+You have reached the Dark Forest, There is a door to the south.
+There is a small zombie, type fight(zombie). to fight her. 
+You see the following items here: [branch]
+
+
+true.
+
+?- take(branch).
+You get the branch.
+It's an ordinary branch, but it looks like it could be used as a weapon,  type hold(Weapon). to hold it!
+true.
+
+?- hold(branch).
+Replacing weapon: hand with branch
+Now holding the weapon: branch
+true.
+
+?- fight(zombie).
+Current status:
+Player health: 2
+Player attact: 2
+Enemy health: 2
+Enemy attact: 1
+God Eye prediction success rate: 60%
+God Eye predicts the enemy will use the element: grass
+Please choose your element for this turn (grass, fire, water) to attack:
+|: fire.
+You have won this battle!
+You took 1 damage
+Current status:
+Player health: 2
+Player attact: 2
+Enemy health: 1
+Enemy attact: 1
+God Eye prediction success rate: 60%
+God Eye predicts the enemy will use the element: water
+Please choose your element for this turn (grass, fire, water) to attack:
+|: fire.
+You have won this battle!
+You took 1 damage
+grassPlayer wins, the enemy is defeated.
+zombie dropped: bloodied_letter and dagger, items are placed in front of you.
+true .
+
+?- take(bloodied_letter).
+You get the bloodied_letter.
+true.
+
+?- take(dagger).
+You get the dagger.
+A dagger with a little blood on it, but still a handy weapon, type hold(Weapon). to hold it!
+true.
+
+?- hold(dagger).
+Replacing weapon: branch with dagger
+Now holding the weapon: dagger
+true.
+
+?- s.
+You have reached the Central Waterfall, doors in all four directions.
+You see the following items here: [the_map]
+
+
+true.
+
+?- take(the_map).
+You get the the_map.
+true.
+
+?- w.
+You have reached the Shop, There is a door to the south.
+There are an army and a businessman type interact(name). to interflow 
+There are no items in this place.
+
+
+true.
+
+?- interact(army).
+You see a army. What will you do?
+1. Fight the army.
+2. Befriend the army.
+3. Leave.
+|: 1.
+You chose to fight the army!
+Current status:
+Player health: 2
+Player attact: 4
+Enemy health: 2
+Enemy attact: 3
+God Eye prediction success rate: 60%
+God Eye predicts the enemy will use the element: water
+Please choose your element for this turn (grass, fire, water) to attack:
+|: grass.
+You have won this battle!
+You took 1 damage
+
+Current status:
+Player health: 2
+Player attact: 4
+Enemy health: 1
+Enemy attact: 3
+God Eye prediction success rate: 60%
+God Eye predicts the enemy will use the element: water
+Please choose your element for this turn (grass, fire, water) to attack:
+|: grass.
+You have won this battle!
+You took 1 damage
+waterPlayer wins, the enemy is defeated.
+army dropped: gold_coin and diary, items are placed in front of you.
+true.
+
+?- take(gold_coin).
+You get the gold_coin.
+An expensive gold coin that can be used for trading
+true.
+
+?- take(diary).
+You get the diary.
+true.
+
+?- interact(businessman).
+You see a businessman. What will you do?
+1. Buy strategy (cost 1 gold coins).
+2. Leave.
+|: 1.
+You bought the soul_eater_strategy!
+true.
+
+?- check(soul_eater_strategy).
+'Adventurer's rumor: soul_eater really likes to use the fire element.
+true.
+
+?- e.
+You have reached the Central Waterfall, doors in all four directions.
+There are no items in this place.
+
+true.
+
+?- e.
+You have reached the Darkest Dungeon, There's a door to the west of you
+Boss alert!!! There is a Soul Eater, you can type fight(soul_eater) to fight it.
+There are no items in this place.
+
+true.
+
+?- fight(soul_eater).
+Current status:
+Player health: 2
+Player attact: 4
+Enemy health: 8
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: fire
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+You have won this battle!
+You took 1 damage
+Current status:
+Player health: 2
+Player attact: 4
+Enemy health: 7
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: water
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+You have won this battle!
+You took 1 damage
+Current status:
+Player health: 2
+Player attact: 4
+Enemy health: 7
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: grass
+Please choose your element for this turn (grass, fire, water) to attack:
+|: fire.
+You have lost the advantage this turn.
+Current status:
+Player health: 1
+Player attact: 4
+Enemy health: 6
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: grass
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+This battle is a draw.
+Current status:
+Player health: 1
+Player attact: 4
+Enemy health: 6
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: fire
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+You have won this battle!
+You took 1 damage
+Current status:
+Player health: 1
+Player attact: 4
+Enemy health: 5
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: water
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+You have won this battle!
+You took 1 damage
+Current status:
+Player health: 1
+Player attact: 4
+Enemy health: 4
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: grass
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+This battle is a draw.
+Current status:
+Player health: 1
+Player attact: 4
+Enemy health: 4
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: water
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+This battle is a draw.
+Current status:
+Player health: 1
+Player attact: 4
+Enemy health: 4
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: fire
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+You have won this battle!
+You took 1 damage
+Current status:
+Player health: 1
+Player attact: 4
+Enemy health: 3
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: fire
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+This battle is a draw.
+Current status:
+Player health: 1
+Player attact: 4
+Enemy health: 3
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: fire
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+You have won this battle!
+You took 1 damage
+Current status:
+Player health: 1
+Player attact: 4
+Enemy health: 2
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: grass
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+You have won this battle!
+You took 1 damage
+Current status:
+Player health: 1
+Player attact: 4
+Enemy health: 1
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: grass
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+You have lost the advantage this turn.
+firePlayer failed, game over.
+You have died. Game over.
+
+The game is over. Please enter the "halt." command to quit.
+true .
+
+
+---------------------------end 2------------------------------------
+
+
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.7)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- start.
+
+Welcome to the Element Battle!!!!!
+Enter commands using standard Prolog syntax.
+Available commands are:
+start.             -- to start the game.
+n.  s.  e.  w.     -- to go in that direction.
+fight(Enemy).      -- to fight the enemy
+take(Object).      -- to pick up an object.
+drop(Object).      -- to put down an object.
+look.              -- to look around you again.
+check(Object).     -- to view details about an item
+open(Object).      -- to open the treasure box
+display_package.   -- to check the contents of your backpack
+interact(Sb).      -- to communicate with them
+instructions.      -- to see this message again.
+halt.              -- to end the game and quit.
+
+Here is the born place. There is a door to the south.No items in front of you.
+
+
+true.
+
+?- s.
+You have reached the Dark Forest, There is a door to the south.
+There is a small zombie, type fight(zombie). to fight her. 
+You see the following items here: [branch]
+
+
+true.
+
+?- take(branch).
+You get the branch.
+It's an ordinary branch, but it looks like it could be used as a weapon,  type hold(Weapon). to hold it!
+true.
+
+?- hold(branch).
+Replacing weapon: hand with branch
+Now holding the weapon: branch
+true.
+
+?- fight(zombie).
+Current status:
+Player health: 2
+Player attact: 2
+Enemy health: 2
+Enemy attact: 1
+God Eye prediction success rate: 60%
+God Eye predicts the enemy will use the element: fire
+Please choose your element for this turn (grass, fire, water) to attack:
+|: grass.
+You have won this battle!
+You took 1 damage
+Current status:
+Player health: 2
+Player attact: 2
+Enemy health: 1
+Enemy attact: 1
+God Eye prediction success rate: 60%
+God Eye predicts the enemy will use the element: fire
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+You have lost the advantage this turn.
+Current status:
+Player health: 1
+Player attact: 2
+Enemy health: 1
+Enemy attact: 1
+God Eye prediction success rate: 60%
+God Eye predicts the enemy will use the element: fire
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+You have won this battle!
+You took 1 damage
+waterPlayer wins, the enemy is defeated.
+zombie dropped: bloodied_letter and dagger, items are placed in front of you.
+true .
+
+?- take(bloodied_letter).
+You get the bloodied_letter.
+true.
+
+?- check(bloodied_letter).
+true.
+
+?- s.
+You have reached the Central Waterfall, doors in all four directions.
+You see the following items here: [the_map]
+
+
+true.
+
+?- w.
+You have reached the Shop, There is a door to the south.
+There are an army and a businessman type interact(name). to interflow 
+There are no items in this place.
+
+
+true.
+
+?- interact(army).
+You see a army. What will you do?
+1. Fight the army.
+2. Befriend the army.
+3. Leave.
+|: 1.
+You chose to fight the army!
+Current status:
+Player health: 1
+Player attact: 2
+Enemy health: 2
+Enemy attact: 3
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: water
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+You have won this battle!
+You took 1 damage
+Current status:
+Player health: 1
+Player attact: 2
+Enemy health: 1
+Enemy attact: 3
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: grass
+Please choose your element for this turn (grass, fire, water) to attack:
+|: fire.
+You have won this battle!
+You took 1 damage
+waterPlayer wins, the enemy is defeated.
+army dropped: gold_coin and diary, items are placed in front of you.
+true .
+
+?- e.
+You have reached the Central Waterfall, doors in all four directions.
+You see the following items here: [the_map]
+
+true.
+
+?- e.
+You have reached the Darkest Dungeon, There's a door to the west of you
+Boss alert!!! There is a Soul Eater, you can type fight(soul_eater) to fight it.
+There are no items in this place.
+
+true.
+
+
+?- fight(soul_eater).
+Current status:
+Player health: 2
+Player attact: 4
+Enemy health: 8
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: fire
+Please choose your element for this turn (grass, fire, water) to attack:
+|: fire
+You have won this battle!
+You took 1 damage
+Current status:
+Player health: 2
+Player attact: 4
+Enemy health: 7
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: water
+Please choose your element for this turn (grass, fire, water) to attack:
+|: fire.
+You have won this battle!
+You took 1 damage
+Current status:
+Player health: 2
+Player attact: 4
+Enemy health: 7
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: grass
+Please choose your element for this turn (grass, fire, water) to attack:
+|: fire.
+You have lost the advantage this turn.
+Current status:
+Player health: 1
+Player attact: 4
+Enemy health: 6
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: grass
+Please choose your element for this turn (grass, fire, water) to attack:
+|: grass
+This battle is a draw.
+Current status:
+Player health: 1
+Player attact: 4
+Enemy health: 6
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: grass.
+Please choose your element for this turn (grass, fire, water) to attack:
+|: grass.
+You have won this battle!
+You took 1 damage
+Current status:
+Player health: 1
+Player attact: 4
+Enemy health: 5
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: water
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+You have won this battle!
+You took 1 damage
+Current status:
+Player health: 1
+Player attact: 4
+Enemy health: 4
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: water.
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+This battle is a draw.
+Current status:
+Player health: 1
+Player attact: 4
+Enemy health: 4
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: water
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+This battle is a draw.
+Current status:
+Player health: 1
+Player attact: 4
+Enemy health: 4
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: fire
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+You have won this battle!
+You took 1 damage
+Current status:
+Player health: 1
+Player attact: 4
+Enemy health: 3
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: fire
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+This battle is a draw.
+Current status:
+Player health: 1
+Player attact: 4
+Enemy health: 3
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: fire
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+You have won this battle!
+You took 1 damage
+Current status:
+Player health: 1
+Player attact: 4
+Enemy health: 2
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: grass
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+You have won this battle!
+You took 1 damage
+Current status:
+Player health: 1
+Player attact: 4
+Enemy health: 1
+Enemy attact: 5
+God Eye prediction success rate: 40%
+God Eye predicts the enemy will use the element: grass
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+You have won this battle!
+You took 1 damage
+waterPlayer wins, the enemy is defeated.
+soul eater dropped: queen_of_the_moonlit_strategy and soulsword, items are placed in front of you
+
+?- take(queen_of_the_moonlit_strategy).
+You get the queen_of_the_moonlit_strategy.
+Adventurer's rumor: queen_of_the_moonlit is a one-of-a-kind genius, and her moves are unpredictable. If you don't have exceptionally strong vision, don't attempt lightly. However, she seems to be more skilled with the water element and the grass element.
+true.
+
+?- take(soulsword).
+You get the soulsword.
+A blood-red sword, crafted with utmost dedication by the supreme swordsmith five hundred years ago. However, due to the slaughter of too many beings, the blade has turned blood-red. , type hold(Weapon). to hold it!
+true.
+
+?- hold(soulsword).
+Replacing weapon: branch with soulsword
+Now holding the weapon: soulsword
+true.
+
+?- w.
+You have reached the Central Waterfall, doors in all four directions.
+There are no items in this place.
+
+
+true.
+
+?- s.
+You have reached the Moonlight castle, There's a door to the west of you
+Boss alert!!! Queen of the Moonlit here!!!!!, you can type fight(queen_of_the_moonlit) to fight it, and there's a door to your north and south
+There are no items in this place.
+
+
+true.
+
+?- fight(queen_of_the_moonlit).
+Current status:
+Player health: 2
+Player attact: 11
+Enemy health: 12
+Enemy attact: 8
+God Eye prediction success rate: 80%
+God Eye predicts the enemy will use the element: fire
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+You have won this battle!
+You took 3 damage
+Current status:
+Player health: 2
+Player attact: 11
+Enemy health: 9
+Enemy attact: 8
+God Eye prediction success rate: 80%
+God Eye predicts the enemy will use the element: fire
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+You have won this battle!
+You took 3 damage
+Current status:
+Player health: 2
+Player attact: 11
+Enemy health: 6
+Enemy attact: 8
+God Eye prediction success rate: 80%
+God Eye predicts the enemy will use the element: fire
+Please choose your element for this turn (grass, fire, water) to attack:
+|: water.
+You have lost the advantage this turn.
+Current status:
+Player health: 1
+Player attact: 11
+Enemy health: 6
+Enemy attact: 8
+God Eye prediction success rate: 80%
+God Eye predicts the enemy will use the element: grass
+Please choose your element for this turn (grass, fire, water) to attack:
+|: fire.
+You have won this battle!
+You took 3 damage
+Current status:
+Player health: 1
+Player attact: 11
+Enemy health: 3
+Enemy attact: 8
+God Eye prediction success rate: 80%
+God Eye predicts the enemy will use the element: water
+Please choose your element for this turn (grass, fire, water) to attack:
+|: grass.
+You have won this battle!
+You took 3 damage
+grassPlayer wins, the enemy is defeated.
+queen_of_the_moonlit dropped: lunar_tear and the_supreme_key, items are placed in front of you.
+The final boss has been defeated! You feel a surge of energy as the final treasure is revealed.
+true .
+
+?- take(the_supreme_key).
+You get the the_supreme_key.
+A key of pure gold, shining with a dazzling light
+true.
+
+?- s.
+You have reached the Precious derostis, There's a treasure box, try to use 'open' to open it, and there's a door to your north
+
+
+true.
+
+?- open(treasure_box).
+You has the key. What will you do?
+1. Open the treasure box!!!.
+2. Leave.
+|: 1.
+You've got a beautiful collection of jewels.
+You can type 'finish' to finish the game, or you can walk around.
+true.
+
+
+
+################Since my game has five endings, I won't show them all here##############
+#################Welcome to my game to experience more endings########################
+
+
+
+---------------------------------------------------end3------------------------------------------------------- 
+     As you're captivated by the dazzling jewels in the treasure chest, you don't notice the army behind you raising a long sword and thrusting it into your back. In shock, you turn to face your friend.
+     Army says to you, 'I'm sorry, I must obtain the Lunar Tear to save the one I love. I can't let you take it away.'
+     But little does he know, the one he loves has already transformed completely into a zombie…and was killed by you."
+
+---------------------------------------------------end 4-------------------------------------------------------
+     army is happily holding a man, his face is very handsome, you don't know this man, but from his clothes, it seems to be a zombie before
+
+---------------------------------------------------end 5-------------------------------------------------------
+     army sits beside zombie's dead body. You can't see his face, but you can feel his grief
